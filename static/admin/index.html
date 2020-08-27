@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content Manager</title>
-    <!-- Include the script that enables Netlify Identity on this page. -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </head>
-  <body>
-    <!-- Include the script that builds the page and powers Netlify CMS -->
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <!-- Include the script that enables Netlify Identity on this page. -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <script>
+    CMS.registerEditorComponent({
+      // Internal id of the component
+      id: "readalong",
+      // Visible label
+      label: "ReadAlong",
+      // Fields the user need to fill out when adding an instance of the component
+      fields: [{ name: 'text', label: 'Path to text file', widget: 'string' }, { name: 'audio', label: 'Path to audio file', widget: 'string' }, { name: 'alignment', label: 'Path to alignment file', widget: 'string' }],
+      // Pattern to identify a block as being an instance of this component
+      pattern: /^{{< readalongs text=(\S+) alignment=(\S+) audio=(\S+) >}}$/,
+      // Function to extract data elements from the regexp match
+      fromBlock: function (match) {
+        console.log(match)
+        return {
+          text: match[1],
+          alignment: match[2],
+          audio: match[3]
+        };
+      },
+      // Function to create a text block from an instance of this component
+      toBlock: function (obj) {
+        console.log(obj)
+        return '{{< readalongs text=' + obj.text + ' alignment=' + obj.alignment + ' audio=' + obj.audio + ' >}}';
+      },
+      // Preview output for this component. Can either be a string or a React component
+      // (component gives better render performance)
+      toPreview: function (obj) {
+        return (
+          '{{< readalongs text=' + obj.text + ' alignment=' + obj.alignment + ' audio=' + obj.audio + ' >}}'
+        );
+      }
+    });
+  </script>
+</body>
+
 </html>
