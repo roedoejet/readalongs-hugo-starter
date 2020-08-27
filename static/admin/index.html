@@ -24,7 +24,6 @@
       pattern: /^{{< readalongs text=(\S+) alignment=(\S+) audio=(\S+) >}}$/,
       // Function to extract data elements from the regexp match
       fromBlock: function (match) {
-        console.log(match)
         return {
           text: match[1],
           alignment: match[2],
@@ -33,7 +32,6 @@
       },
       // Function to create a text block from an instance of this component
       toBlock: function (obj) {
-        console.log(obj)
         return '{{< readalongs text=' + obj.text + ' alignment=' + obj.alignment + ' audio=' + obj.audio + ' >}}';
       },
       // Preview output for this component. Can either be a string or a React component
