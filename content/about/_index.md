@@ -1,13 +1,10 @@
 ---
 title: Who Are We?
-description: >-
-  <!--StartFragment-->
-
-
-  The Fairy Creek Blockades were started and run by people just like you. We are a grassroots group of activist from Vancouver Island who stand by the same principal - that old growth logging needs to stop. Standing with us are teachers, environmentalists, loggers, community activists, students and workers across Vancouver Island.
-
-
-  <!--EndFragment-->
+description: The Fairy Creek Blockades were started and run by people just like
+  you. We are a grassroots group of activist from Vancouver Island who stand by
+  the same principal - that old growth logging needs to stop. Standing with us
+  are teachers, environmentalists, loggers, community activists, students and
+  workers across Vancouver Island.
 featured_image: /img/dsc02540.jpg
 ---
 WHAT DO WE WANT?\
