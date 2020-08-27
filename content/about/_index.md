@@ -8,7 +8,7 @@ description: >-
 
 
   <!--EndFragment-->
-featured_image: ""
+featured_image: /img/dsc02540.jpg
 ---
 WHAT DO WE WANT?\
 The three main goals of the Ferry Creek Blockades are to stop Old Growth logging in the Fairy Creek Watershed; to call on John Horgan and the BC government to release the recommendations of the Old-Growth Forest Review Panel (submitted in April, but not yet released to the public) and lastly; to advocate to both government and the public for an immediate and just transition away from logging old growth forests across British Columbia.
