@@ -1,4 +1,4 @@
-baseURL = "www.example.org"
+baseURL = "https://wonderful-jackson-eb7e56.netlify.app/"
 languageCode = "en-us"
 title = "ReadAlongs"
 theme = "ananke"
