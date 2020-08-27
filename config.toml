@@ -15,12 +15,14 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 [params]
+  slogan = "Stand with us."
+  sloganSubtext = "The Fairy Creek blockades are preventing road building and logging into the last intact watershed in the San Juan River Valley, and the entirety of southern Vancouver Island."
   favicon = ""
   site_logo = ""
   description = "The last theme you'll ever need. Maybe."
-  facebook = ""
-  twitter = "https://twitter.com/GoHugoIO"
-  instagram = ""
+  facebook = "https://www.facebook.com/FairyCreekBlockade"
+  twitter = ""
+  instagram = "https://www.instagram.com/explore/tags/savefairycreek/?hl=en"
   youtube = ""
   github = ""
   gitlab = ""
