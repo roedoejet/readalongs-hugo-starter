@@ -1,11 +1,11 @@
 backend:
-  # local_backend: true
-  # name: proxy
-  # proxy_url: http://localhost:8082/api/v1
-  name: git-gateway
+  local_backend: true
+  name: proxy
+  proxy_url: http://localhost:8082/api/v1
+  # name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: static/img
-public_folder: /img
+media_folder: static/media
+public_folder: /media
 collections:
   - name: 'posts'
     label: 'Posts'
@@ -25,6 +25,14 @@ collections:
       - label: "About Page"
         name: "about"
         file: "content/about/_index.md"
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: "Description", name: "description", widget: "markdown" }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: "How to get started"
+        name: "gallery"
+        file: "content/gallery/_index.md"
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: "Description", name: "description", widget: "markdown" }

@@ -8,5 +8,6 @@ tags:
   - apples
   - oranges
 ---
-
 Nothing to see here, just a sample blog post
+
+{{< readalongs text=/media/danish.xml alignment=/media/danish.smil audio=/media/danish.wav >}}

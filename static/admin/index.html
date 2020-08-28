@@ -19,7 +19,7 @@
       // Visible label
       label: "ReadAlong",
       // Fields the user need to fill out when adding an instance of the component
-      fields: [{ name: 'text', label: 'Path to text file', widget: 'string' }, { name: 'audio', label: 'Path to audio file', widget: 'string' }, { name: 'alignment', label: 'Path to alignment file', widget: 'string' }],
+      fields: [{ name: 'text', label: 'Text file (XML)', widget: 'file' }, { name: 'audio', label: 'Audio file', widget: 'file' }, { name: 'alignment', label: 'Alignment file (SMIL)', widget: 'file' }],
       // Pattern to identify a block as being an instance of this component
       pattern: /^{{< readalongs text=(\S+) alignment=(\S+) audio=(\S+) >}}$/,
       // Function to extract data elements from the regexp match
